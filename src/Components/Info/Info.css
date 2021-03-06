@@ -1,0 +1,13 @@
+
+.info-container{
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+    width: 400px;
+    height: 350px;
+    padding: 10px;
+    margin-left: 300px;
+
+}
+.info-flag img{
+    width: 25%;
+}
