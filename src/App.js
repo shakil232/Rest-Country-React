@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 import NotFount from './Components/NotFound/NotFount';
 import CountryDetail from './Components/CountryDetails/CountryDetail';
+import Contact from './Components/Contact/Contact';
+import About from './Components/About/About';
+
+import CountryDisplay from './Components/CountryDisplay/CountryDisplay';
 
 function App() {
   
@@ -12,13 +16,16 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/home">
-          <Home/>
+        <Route path="/countries">
+          <CountryDisplay/>
         </Route>
-        <Route path="/country/:countryName">
-          <CountryDetail/>
+        <Route path="/contact">
+          <Contact/>
         </Route>
-        <Route path='/about'>
+        <Route path="/about">
+          <About/>
+        </Route>
+        <Route path="/Details/:countryName">
           <CountryDetail/>
         </Route>
         <Route exact path="/">

@@ -8,8 +8,8 @@ const CountryDetail = () => {
     useEffect(() => {
         const url = `https://restcountries.eu/rest/v2/name/${countryName}`
         fetch(url)
-            .then(res => res.json())
-            .then(data => setCountryInfo(data))
+        .then(res => res.json())
+        .then(data => setCountryInfo(data))
     }, [])
     return (
         <div>
